@@ -41,6 +41,7 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
+  CarouselDots
 } from "./ui/carousel";
 
 const projects = [
@@ -72,7 +73,7 @@ const projects = [
       "https://res.cloudinary.com/dv610czy9/image/upload/v1760718249/Screenshot_From_2025-10-17_18-23-51_qfii4d.png",
     ],
     demoLink: "https://noteit-rose.vercel.app",
-    githubLink: "#",
+    githubLink: "https://www.github.com/Dieudonne-Ibikoraneza/noteit-rose",
   },
   {
     title: "Portfolio Website",
@@ -85,8 +86,8 @@ const projects = [
       "https://res.cloudinary.com/dv610czy9/image/upload/v1760718634/navbar_n8w2py.png",
       "https://res.cloudinary.com/dv610czy9/image/upload/v1760718683/project_ccizag.png",
     ],
-    demoLink: "#",
-    githubLink: "#",
+    demoLink: "https://itsdieudonne.vercel.app",
+    githubLink: "https://www.github.com/Dieudonne-Ibikoraneza/itsdieudonne",
   },
   {
     title: "Automated Parking Management System",
@@ -397,6 +398,7 @@ export const Projects = () => {
                       </CarouselContent>
                       <CarouselPrevious className="left-2" />
                       <CarouselNext className="right-2" />
+                      <CarouselDots />
                     </Carousel>
                   </div>
                 </div>
