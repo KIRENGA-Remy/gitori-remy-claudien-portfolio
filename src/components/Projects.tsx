@@ -347,7 +347,7 @@ export const Projects = () => {
                   <div className="flex gap-3">
                     <Button
                       variant="outline"
-                      className="flex-1 border-primary text-primary hover:bg-primary hover:text-background"
+                      className="flex-1 border-primary text-primary hover:bg-primary hover:text-background cursor-can-hover"
                       onClick={() =>
                         window.open(selectedProject.demoLink, "_blank")
                       }
@@ -357,7 +357,7 @@ export const Projects = () => {
                     </Button>
                     <Button
                       variant="outline"
-                      className="flex-1"
+                      className="flex-1 cursor-can-hover"
                       onClick={() =>
                         window.open(selectedProject.githubLink, "_blank")
                       }
