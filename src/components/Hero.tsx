@@ -163,7 +163,7 @@ export const Hero = () => {
   return (
     <section
       id="hero"
-      className="min-h-screen relative flex items-center justify-center px-6 pt-20"
+      className="min-h-screen relative flex items-center justify-center px-0 sm:px-6 pt-20"
     >
       <div className="container mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -177,7 +177,7 @@ export const Hero = () => {
           >
             <div>
               <p
-                className="text-white text-3xl mb-2 transform transition-all duration-500 hover:scale-[1.01]"
+                className="text-white text-xl sm:text-3xl mb-2 transform transition-all duration-500 hover:scale-[1.01]"
                 onMouseEnter={() => startTextAnimation("hello")}
               >
                 <span
@@ -192,7 +192,7 @@ export const Hero = () => {
               </p>
 
               <h1
-                className="text-5xl md:text-7xl font-bold mb-4 transform transition-all duration-500 hover:scale-[1.01]"
+                className="text-3xl sm:text-5xl md:text-7xl font-bold mb-4 transform transition-all duration-500 hover:scale-[1.01]"
                 onMouseEnter={() => startTextAnimation("name")}
               >
                 <span
@@ -207,7 +207,7 @@ export const Hero = () => {
               </h1>
 
               <p
-                className="text-xl text-muted-foreground transform transition-all duration-500 hover:scale-[1.07]"
+                className="text-md sm:text-xl text-muted-foreground transform transition-all duration-500 hover:scale-[1.07]"
                 onMouseEnter={() => startTextAnimation("role")}
               >
                 <span
@@ -223,7 +223,7 @@ export const Hero = () => {
             </div>
 
             <p
-              className="text-lg text-muted-foreground leading-relaxed max-w-xl transform transition-all duration-500 hover:scale-[1.01]"
+              className="text-sm sm:text-lg text-muted-foreground leading-relaxed max-w-xl transform transition-all duration-500 hover:scale-[1.01]"
               onMouseEnter={() => startTextAnimation("description")}
             >
               <span
