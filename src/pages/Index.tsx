@@ -8,30 +8,34 @@ import { FloatingDock } from "@/components/FloatingDock";
 import "aos/dist/aos.css";
 import Aos from "aos";
 import { useEffect } from "react";
+import {Education} from "@/components/Education.tsx";
+import {Experience} from "@/components/Experience.tsx";
 
 const Index = () => {
-  useEffect(() => {
-    Aos.init({
-      duration: 1000,
-      once: false,
-      offset: 100,
-      mirror: true,
-    });
-  }, []);
+    useEffect(() => {
+        Aos.init({
+            duration: 1000,
+            once: false,
+            offset: 100,
+            mirror: true,
+        });
+    }, []);
 
-  return (
-    <div className="relative min-h-screen bg-opacity-[0.15] bg-white font-['Jetbrains_Mono'] overflow-hidden">
-      <StarField />
-      <Navigation />
-      <FloatingDock show={false} />
-      <main>
-        <Hero />
-        <TechStack />
-        <Projects />
-        <Contact />
-      </main>
-    </div>
-  );
+    return (
+        <div className="relative min-h-screen bg-opacity-[0.15] bg-white font-['Jetbrains_Mono'] overflow-hidden">
+            <StarField />
+            <Navigation />
+            <FloatingDock show={false} />
+            <main>
+                <Hero />
+                <TechStack />
+                <Education />
+                <Experience />
+                <Projects />
+                <Contact />
+            </main>
+        </div>
+    );
 };
 
 export default Index;
