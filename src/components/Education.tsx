@@ -11,7 +11,7 @@ const educationItems = [
     {
         year: "2019 - 2022",
         degree: "Ordinary Level Education (O-Level)",
-        institution: "Ecole Secondaire Mubuga",
+        institution: "College Du Christ Roi, Nyanza",
         description:
             "Completed lower secondary education with a strong foundation in core subjects including mathematics, sciences, languages, and introductory computer studies. Built essential academic skills and discipline while exploring early interests in technology and problem-solving during this transitional phase of secondary schooling.",
     }

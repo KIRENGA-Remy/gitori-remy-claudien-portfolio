@@ -2,32 +2,46 @@ import { Briefcase } from "lucide-react";
 
 const experienceItems = [
     {
-        period: "2025 - Present",
+        period: "Sep 2025 – Dec 2025",
         title: "Software Developer Intern",
-        company: "Mulinga Labs, Kigali, Rwanda",
+        company: "Africa Quantitative Sciences (AQS), Kigali, Rwanda",
         description:
-            "Contributing to full-stack web and mobile applications using React, Node.js, and modern databases. Focused on responsive UI development, API integration, and performance optimization while supporting Docker-based workflows and CI/CD practices.",
+            "Contributing to full-stack web and mobile applications using PUG templates, Node.js, React Native, and mongodb databases. Focused on responsive UI development, API integration, and performance optimization while supporting Docker-based workflows and CI/CD practices.",
     },
     {
-        period: "2024 - 2025",
-        title: "Freelance Developer",
-        company: "Self-Employed, Kigali, Rwanda",
+        period: "Jan 2026 – Mar 2026",
+        title: "Full-Stack Developer",
+        company: "Delight Music and Studio Center, Ruyenzi, Kamonyi",
+        description:
+            "Played a key role in full-stack web development using React, Node.js, and modern databases with RBAC for managers, producers and artists. Focused on responsive UI development, API integration, and performance optimization while supporting Docker-based workflows and CI/CD practices.",
+    },
+    {
+        period: "Mar 2026 – May 2026",
+        title: "Software Engineering Trainer",
+        company: "Bright Vision Training Center, Gahogo, Muhanga",
         description:
             "Built custom web and cross-platform mobile apps for clients using React and React Native. Integrated third-party APIs (payments, real-time data) and delivered responsive, production-ready solutions with clean code and smooth deployments.",
     },
     {
-        period: "2025",
-        title: "Team Leader & Frontend Developer – JamiBook Project",
-        company: "Kigali, Rwanda",
+        period: "Feb 2023 – Apr 2025",
+        title: "Junior Developer Mentor",
+        company: "Brainiacs / Rwanda Coding Academy, Nyabihu",
         description:
-            "Led frontend development and team coordination for JamiBook, a real-time asset and organization information platform. Designed mobile-first UI for better accessibility, mentored team members, and ensured seamless backend integration to launch on time with all core features.",
+            "Mentored 20+ junior developers in backend fundamentals, REST API design, version control and production code quality standards.Designed and delivered modular learning tracks covering backend systems, API architecture and frontend integration",
+    },
+    {
+        period: "2025",
+        title: "RCS Visitations Mobile App",
+        company: "Self-Employed, Kigali, Rwanda",
+        description:
+            "I developed a personal Mobile app for RWANDA CORRECTIONAL SERVICE visitation management. Built with Expo SDK 54, React Native, Nodejs, Express, TypeScript, and Prisma/PostgreSQL backend.",
     },
     {
         period: "2024",
-        title: "Frontend Developer – Fastinfo Hackathon Project",
+        title: "Full-Stack Developer – Event Connect Hackathon Project",
         company: "Hackathon, Kigali, Rwanda",
         description:
-            "Developed the frontend for an online platform delivering real-time asset and organization information. Implemented intuitive UI features for improved navigation and user experience, collaborated with backend developers for smooth integration, and successfully launched within the hackathon timeframe.",
+            "Contributed to the project development and pitching for an online platform for managing the creation and organization of events. Event attenders can register and pay to attend events through a secure payment system.",
     },
 ];
 
