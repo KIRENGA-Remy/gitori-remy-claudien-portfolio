@@ -46,6 +46,7 @@ import {
 } from "react-icons/si";
 import { useState} from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "./ui/dialog";
+import { SiMysql } from "@icons-pack/react-simple-icons";
 
 // Custom Convex Icon
 const ConvexIcon = ({ size = 20, className = "" }) => (
@@ -86,6 +87,7 @@ const techIcons = {
   Python: SiPython,
   "C++": SiCplusplus,
   PostgreSQL: SiPostgresql,
+  MySQL: SiMysql,
   MongoDB: SiMongodb,
   Prisma: SiPrisma,
   Supabase: SiSupabase,
