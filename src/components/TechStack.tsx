@@ -24,6 +24,8 @@ import {
   SiBootstrap,
   SiPhp,
   SiDjango,
+  SiAngular,
+  SiLaravel,
 } from "@icons-pack/react-simple-icons";
 
 const JavaIcon = ({ size = 50, className = "" }) => (
@@ -73,9 +75,9 @@ const techCategories = {
       icon: SiTailwindcss,
     },
     {
-      name: "Bootstrap",
-      description: "Responsive front-end framework",
-      icon: SiBootstrap,
+      name: "Angular",
+      description: "Robust framework for building dynamic web applications",
+      icon: SiAngular,
     },
   ],
   Backend: [
@@ -115,9 +117,9 @@ const techCategories = {
       icon: SiCplusplus,
     },
     {
-      name: "Solidity",
-      description: "Smart contract development for Ethereum",
-      icon: SiSolidity,
+      name: "Laravel",
+      description: "PHP web application framework",
+      icon: SiLaravel,
     },
     {
       name: "REST APIs",
