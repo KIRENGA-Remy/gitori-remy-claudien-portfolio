@@ -49,16 +49,16 @@ const projects = [
     title: "Blog & NewsLetter",
     techStack: ["Frontend,", "Backend"],
     description:
-      "This is a personal blog website created to share insights, tutorials, and experiences related to software development, technology, and personal growth. Built with a clean, responsive design, the blog features categorized posts, a searchable archive, and a user-friendly interface. Whether you're a developer or a tech enthusiast, you'll find valuable and engaging content regularly updated by IBIKORANEZA Dieudonne.",
+      "This is a personal blog website created to share insights, tutorials, and experiences related to software development, technology, and personal growth. Built with a clean, responsive design, the blog features categorized posts, a searchable archive, and a user-friendly interface. Whether you're a developer or a tech enthusiast, you'll find valuable and engaging content regularly updated by GITORI Remy Claudien.",
     tags: ["React", "Node.js", "Tailwind CSS", "MongoDB"],
     images: [
       "https://res.cloudinary.com/dv610czy9/image/upload/v1760717628/Screenshot_From_2025-10-17_18-10-34_nyzwqa.png",
       "https://res.cloudinary.com/dv610czy9/image/upload/v1760717756/Screenshot_From_2025-10-17_18-15-39_ra02se.png",
       "https://res.cloudinary.com/dv610czy9/image/upload/v1760717954/Screenshot_From_2025-10-17_18-18-57_wjaprf.png",
     ],
-    demoLink: "https://ibikoraneza-dieudone-blog.vercel.app/",
+    demoLink: "https://gitori-remy-claudien-blog.vercel.app/",
     githubLink:
-      "https://github.com/Dieudonne-Ibikoraneza/ibikoraneza-dieudone-blog",
+      "https://github.com/KIRENGA-Remy/gitori-remy-claudien-blog",
   },
   {
     title: "Note Taking Platform",
@@ -73,13 +73,13 @@ const projects = [
       "https://res.cloudinary.com/dv610czy9/image/upload/v1760718249/Screenshot_From_2025-10-17_18-23-51_qfii4d.png",
     ],
     demoLink: "https://noteit-rose.vercel.app",
-    githubLink: "https://www.github.com/Dieudonne-Ibikoraneza/noteit-rose",
+    githubLink: "https://www.github.com/KIRENGA-Remy/noteit-rose",
   },
   {
     title: "Portfolio Website",
     techStack: ["Frontend,", "Portfolio"],
     description:
-      "Step into the digital world of Dieudonne, the beloved software developer, with this responsive portfolio website. 🌐✨ Explore his inspiring journey, milestones, and life-changing services blending tech and spirituality. Built with modern tools like React and TypeScript, it's a heartfelt tribute to a mentor who transforms lives. 💻🕊️ Crafted with ❤️ by IBIKORANEZA Dieudonne! 🚀",
+      "Step into the digital world of Remy Claudien, the beloved software developer, with this responsive portfolio website. 🌐✨ Explore his inspiring journey, milestones, and life-changing services blending tech and spirituality. Built with modern tools like React and TypeScript, it's a heartfelt tribute to a mentor who transforms lives. 💻🕊️ Crafted by GITORI Remy Claudien! 🚀",
     tags: ["Next", "Tailwind CSS", "TypeScript", "shadcn/ui", "Three.js"],
     images: [
       "https://res.cloudinary.com/dv610czy9/image/upload/v1760718486/landing_jupo1w.png",
@@ -87,7 +87,7 @@ const projects = [
       "https://res.cloudinary.com/dv610czy9/image/upload/v1760718683/project_ccizag.png",
     ],
     demoLink: "https://itsdieudonne.vercel.app",
-    githubLink: "https://www.github.com/Dieudonne-Ibikoraneza/itsdieudonne",
+    githubLink: "https://www.github.com/KIRENGA-Remy/itsdieudonne",
   },
   {
     title: "Automated Parking Management System",
@@ -101,9 +101,9 @@ const projects = [
       "https://res.cloudinary.com/dv610czy9/image/upload/v1760718921/03_d65r2j.png",
     ],
     demoLink:
-      "https://www.github.com/Dieudonne-Ibikoraneza/parking-management-system",
+      "https://www.github.com/KIRENGA-Remy/parking-management-system",
     githubLink:
-      "https://www.github.com/Dieudonne-Ibikoraneza/parking-management-system",
+      "https://www.github.com/KIRENGA-Remy/parking-management-system",
   },
   {
     title: "HooBank - The Next Generation Payment Method",
@@ -117,7 +117,7 @@ const projects = [
       "https://res.cloudinary.com/dv610czy9/image/upload/v1760719118/Screenshot_From_2025-10-17_18-38-19_qlq3eu.png",
     ],
     demoLink: "https://hoo-bank-vert.vercel.app/",
-    githubLink: "https://www.github.com/Dieudonne-Ibikoraneza/hoo-bank",
+    githubLink: "https://www.github.com/KIRENGA-Remy/hoo-bank",
   },
   {
     title: "Portfolio",
@@ -130,9 +130,9 @@ const projects = [
       "https://res.cloudinary.com/dv610czy9/image/upload/v1760719514/Screenshot_From_2025-10-17_18-44-52_fy0rac.png",
       "https://res.cloudinary.com/dv610czy9/image/upload/v1760719638/Screenshot_From_2025-10-17_18-46-13_ze3jhu.png",
     ],
-    demoLink: "https://ibikoraneza-dieudonne-portfolio.vercel.app",
+    demoLink: "https://gitori-remy-claudien-portfolio.vercel.app",
     githubLink:
-      "https://www.github.com/Dieudonne-Ibikoraneza/ibikoraneza-dieudonne-portfolio",
+      "https://www.github.com/KIRENGA-Remy/gitori-remy-claudien-portfolio",
   },
 ];
 
@@ -294,7 +294,7 @@ export const Projects = () => {
             Explore more on GitHub
           </span>
           <a
-            href="https://github.com/Dieudonne-Ibikoraneza"
+            href="https://github.com/KIRENGA-Remy"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-primary cursor-can-hover p-3 rounded-full flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:shadow-2xl group-hover:shadow-primary/30"

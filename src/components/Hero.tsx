@@ -37,7 +37,7 @@ app.post('/api/contact', async (req, res) => {
   );
 
   await sendEmail({
-    to: 'dieudonneibikoraneza13@gmail.com',
+    to: 'gitoliremy@gmail.com',
     subject: \`Contact from \${name}\`,
     text: message
   });
@@ -202,7 +202,7 @@ export const Hero = () => {
                       : ""
                   }
                 >
-                  <span className="text-primary">IBIKORANEZA Dieudonne</span>
+                  <span className="text-primary">GITORI Remy Claudien</span>
                 </span>
               </h1>
 
@@ -242,7 +242,7 @@ export const Hero = () => {
             {/*
             <div className="flex items-center gap-3">
   
-    href="https://github.com/Dieudonne-Ibikoraneza"
+    href="https://github.com/KIRENGA-Remy"
     target="_blank"
     rel="noopener noreferrer"
     className="cursor-can-hover p-2 rounded-lg border border-border hover:border-primary hover:text-primary transition-all duration-300 items-center justify-center flex"
@@ -250,7 +250,7 @@ export const Hero = () => {
     <GithubIcon className="w-5 h-5 text-primary" />
   </a>
   
-    href="https://linkedin.com/in/dieudonne-ibikoraneza-2b4b9820b"
+    href="https://www.linkedin.com/in/remy-claudien-gitoli-255116395/"
     target="_blank"
     rel="noopener noreferrer"
     className="cursor-can-hover p-2 rounded-lg border border-border hover:border-primary hover:text-primary transition-all duration-300 items-center justify-center flex"
@@ -258,7 +258,7 @@ export const Hero = () => {
     <LinkedInIcon className="h-5 w-5 text-primary" />
   </a>
   
-    href="mailto:dieudonneibikoraneza13@gmail.com"
+    href="mailto:gitoliremy@gmail.com"
     className="cursor-can-hover p-2 rounded-lg border border-border hover:border-primary hover:text-primary transition-all duration-300 items-center justify-center flex"
   >
     <MailIcon className="h-5 w-5 text-primary" />
@@ -283,7 +283,7 @@ export const Hero = () => {
 
               <div className="flex items-center gap-3">
                 <a
-                  href="https://github.com/Dieudonne-Ibikoraneza"
+                  href="https://github.com/KIRENGA-Remy"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="cursor-can-hover p-2 rounded-lg border border-border hover:border-primary hover:text-primary transition-all duration-300 items-center justify-center flex"
@@ -291,7 +291,7 @@ export const Hero = () => {
                   <Github className="w-5 h-5 text-primary" />
                 </a>
                 <a
-                  href="https://linkedin.com/in/dieudonne-ibikoraneza-2b4b9820b"
+                  href="https://www.linkedin.com/in/remy-claudien-gitoli-255116395/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-2 rounded-lg border cursor-can-hover border-border hover:border-primary hover:text-primary transition-all duration-300 items-center justify-center flex"
@@ -299,7 +299,7 @@ export const Hero = () => {
                   <Linkedin className="h-5 w-5 text-primary" />
                 </a>
                 <a
-                  href="mailto:dieudonneibikoraneza13@gmail.com"
+                  href="mailto:gitoliremy@gmail.com"
                   className="cursor-can-hover p-2 rounded-lg border border-border cursor-can-hover hover:border-primary hover:text-primary transition-all duration-300 items-center justify-center flex"
                 >
                   <Mail className="h-5 w-5 text-primary" />
