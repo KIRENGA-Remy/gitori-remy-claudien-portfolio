@@ -152,7 +152,7 @@ const projects = [
       "https://res.cloudinary.com/dfcjbxjcu/image/upload/v1780486240/portfolio_image_ods8yv.png",
       "https://res.cloudinary.com/dfcjbxjcu/image/upload/v1780486271/portfolio_contact_us_d6l8sb.png",
     ],
-    demoLink: "https://github.com/KIRENGA-Remy/gitori-remy-claudien-portfolio",
+    demoLink: "https://gitori-remy-claudien-portfolio.vercel.app",
     githubLink: "https://github.com/KIRENGA-Remy/gitori-remy-claudien-portfolio",
   },
   // {
