@@ -2,6 +2,16 @@ import { ExternalLink, Github } from "lucide-react";
 import { Card } from "./ui/card";
 import { Button } from "./ui/button";
 import { FloatingDock } from "@/components/ui/floating-dock";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "./ui/carousel";
+
+// Custom CarouselDots component (add inside this file or import)
+// import { CarouselDots } from "./ui/carousel-dots";
 
 import {
   SiReact,
@@ -27,27 +37,65 @@ import {
   SiVite,
   SiNetlify,
   SiHtml5,
-  SiCss3,
+  // SiCss3,
+  SiCsswizardry,
   SiBootstrap,
   SiApachemaven,
   SiCplusplus,
   SiArduino,
 } from "react-icons/si";
-import { useState } from "react";
+import { useState} from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "./ui/dialog";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-  CarouselDots
-} from "./ui/carousel";
 
+// Custom Convex Icon
+const ConvexIcon = ({ size = 20, className = "" }) => (
+  <img
+    src="https://avatars.githubusercontent.com/u/81530787?s=200&v=4"
+    width={size}
+    height={size}
+    className={className}
+    alt="Convex"
+  />
+);
+
+const techIcons = {
+  React: SiReact,
+  Next: SiReact,
+  "Next.js": SiReact,
+  Vue: SiVuedotjs,
+  Vite: SiVite,
+  TypeScript: SiTypescript,
+  JavaScript: SiJavascript,
+  "Tailwind CSS": SiTailwindcss,
+  HTML: SiHtml5,
+  CSS: SiCsswizardry,
+  Bootstrap: SiBootstrap,
+  "Chakra UI": SiChakraui,
+  "shadcn/ui": SiShadcnui,
+  "Three.js": SiThreedotjs,
+  "Node.js": SiNodedotjs,
+  Express: SiExpress,
+  Python: SiPython,
+  "C++": SiCplusplus,
+  PostgreSQL: SiPostgresql,
+  MongoDB: SiMongodb,
+  Prisma: SiPrisma,
+  Supabase: SiSupabase,
+  Firebase: SiFirebase,
+  Sanity: SiSanity,
+  "Convex DB": ConvexIcon,
+  "React Query": SiReactquery,
+  "Socket.io": SiSocketdotio,
+  Docker: SiDocker,
+  Netlify: SiNetlify,
+  Maven: SiApachemaven,
+  Arduino: SiArduino,
+};
 const projects = [
+
   {
     title: "Blog & NewsLetter",
-    techStack: ["Frontend,", "Backend"],
+    techStack: ["Frontend", "Backend"],
     description:
       "This is a personal blog website created to share insights, tutorials, and experiences related to software development, technology, and personal growth. Built with a clean, responsive design, the blog features categorized posts, a searchable archive, and a user-friendly interface. Whether you're a developer or a tech enthusiast, you'll find valuable and engaging content regularly updated by GITORI Remy Claudien.",
     tags: ["React", "Node.js", "Tailwind CSS", "MongoDB"],
@@ -62,7 +110,7 @@ const projects = [
   },
   {
     title: "Note Taking Platform",
-    techStack: ["Frontend,", "Convex"],
+    techStack: ["Frontend", "Convex"],
     description:
       "A modern note-taking application built with Next.js and Convex, featuring real-time collaboration, markdown support, and seamless GitHub authentication.",
     tags: ["Next", "Tailwind CSS", "Convex DB"],
@@ -136,44 +184,6 @@ const projects = [
   },
 ];
 
-const techIcons = {
-  React: SiReact,
-  Next: SiReact,
-  Vue: SiVuedotjs,
-  Vite: SiVite,
-  TypeScript: SiTypescript,
-  JavaScript: SiJavascript,
-  "Tailwind CSS": SiTailwindcss,
-  HTML: SiHtml5,
-  CSS: SiCss3,
-  Bootstrap: SiBootstrap,
-  "Chakra UI": SiChakraui,
-  "shadcn/ui": SiShadcnui,
-  "Three.js": SiThreedotjs,
-
-  "Node.js": SiNodedotjs,
-  Express: SiExpress,
-  Python: SiPython,
-  "C++": SiCplusplus,
-
-  PostgreSQL: SiPostgresql,
-  MongoDB: SiMongodb,
-  Prisma: SiPrisma,
-  Supabase: SiSupabase,
-  Firebase: SiFirebase,
-  Sanity: SiSanity,
-  "Convex DB": SiMongodb,
-  "Weather API": SiReact,
-  Stripe: SiReact,
-  "React Query": SiReactquery,
-  "Socket.io": SiSocketdotio,
-
-  Docker: SiDocker,
-  Netlify: SiNetlify,
-  "Chart.js": SiReact,
-  Maven: SiApachemaven,
-  Arduino: SiArduino,
-};
 
 export const Projects = () => {
   const [selectedProject, setSelectedProject] = useState<
@@ -398,7 +408,7 @@ export const Projects = () => {
                       </CarouselContent>
                       <CarouselPrevious className="left-2" />
                       <CarouselNext className="right-2" />
-                      <CarouselDots />
+                      {/* <CarouselDots /> */}
                     </Carousel>
                   </div>
                 </div>

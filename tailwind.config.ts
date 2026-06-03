@@ -147,6 +147,9 @@ export default {
         "subtle-bounce": "subtle-bounce 3s ease-in-out infinite",
         "bounce-twice": "bounce-twice 0.8s ease-in-out",
       },
+      cursor: {
+        'can-hover': 'pointer',
+      },
     },
   },
   plugins: [],

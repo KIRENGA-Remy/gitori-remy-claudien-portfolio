@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Code2, Database, Server, Cloud, Palette, Cpu } from "lucide-react";
 import {
   SiJavascript,
@@ -13,20 +13,22 @@ import {
   SiPrisma,
   SiDocker,
   SiGit,
+  SiGithub,
   SiGithubactions,
   SiCplusplus,
-  SiSolidity,
   SiMysql,
   SiLinux,
   SiFigma,
-  SiCanva,
   SiArduino,
-  SiBootstrap,
   SiPhp,
   SiDjango,
   SiAngular,
   SiLaravel,
 } from "@icons-pack/react-simple-icons";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+// ========== CUSTOM ICONS (not available in the package) ==========
 
 const JavaIcon = ({ size = 50, className = "" }) => (
   <img
@@ -37,6 +39,17 @@ const JavaIcon = ({ size = 50, className = "" }) => (
     alt="Java"
   />
 );
+
+const CanvaIcon = ({ size = 50, className = "" }) => (
+  <img
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg"
+    width={size}
+    height={size}
+    className={className}
+    alt="Canva"
+  />
+);
+
 const ConvexIcon = ({ size = 50, className = "" }) => (
   <img
     src="https://avatars.githubusercontent.com/u/81530787?s=200&v=4"
@@ -46,6 +59,24 @@ const ConvexIcon = ({ size = 50, className = "" }) => (
     alt="Convex DB"
   />
 );
+
+const RoboticsIcon = ({ size = 50, className = "" }) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+  >
+    <path
+      d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 4c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm0 13c-2.33 0-4.31-1.46-5.11-3.5h10.22c-.8 2.04-2.78 3.5-5.11 3.5z"
+      fill="currentColor"
+    />
+  </svg>
+);
+
+// ========== TECH STACK DATA ==========
 
 const techCategories = {
   Frontend: [
@@ -112,11 +143,6 @@ const techCategories = {
       icon: SiDjango,
     },
     {
-      name: "C/C++",
-      description: "System programming and performance-critical applications",
-      icon: SiCplusplus,
-    },
-    {
       name: "Laravel",
       description: "PHP web application framework",
       icon: SiLaravel,
@@ -150,7 +176,7 @@ const techCategories = {
     },
     {
       name: "Prisma",
-      description: "Next-generation ORM for Node.js",
+      description: "Next-generation ORM for Node.js and TypeScript",
       icon: SiPrisma,
     },
   ],
@@ -173,11 +199,11 @@ const techCategories = {
     {
       name: "GitHub",
       description: "Code hosting and collaboration platform",
-      icon: SiGit,
+      icon: SiGithub,
     },
     {
       name: "CI/CD",
-      description: "Continuous integration and deployment",
+      description: "Continuous integration and deployment pipelines",
       icon: SiGithubactions,
     },
   ],
@@ -190,10 +216,15 @@ const techCategories = {
     {
       name: "Canva",
       description: "Graphic design and presentation platform",
-      icon: SiCanva,
+      icon: CanvaIcon,
     },
   ],
   Others: [
+    {
+      name: "C/C++",
+      description: "System programming and performance-critical applications",
+      icon: SiCplusplus,
+    },
     {
       name: "Arduino",
       description: "Open-source electronics platform",
@@ -202,12 +233,7 @@ const techCategories = {
     {
       name: "Robotics",
       description: "Robot design, construction, and programming",
-      icon: Cpu,
-    },
-    {
-      name: "Cyber Security",
-      description: "Protecting systems and networks from digital attacks",
-      icon: SiLinux,
+      icon: RoboticsIcon,
     },
     {
       name: "AI/ML",
@@ -226,73 +252,98 @@ const categoryIcons = {
   Others: Cpu,
 };
 
+// ========== MAIN COMPONENT ==========
+
 export const TechStack = () => {
   const [activeCategory, setActiveCategory] =
     useState<keyof typeof techCategories>("Frontend");
+
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: true,
+      mirror: false,
+    });
+  }, []);
+
   return (
     <section id="tech-stack" className="py-20 px-6 mt-20">
       <div className="container mx-auto">
+        {/* Header */}
         <div className="text-center mb-16" data-aos="fade-up">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8">Tech Stack</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
+            Tech Stack
+          </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             A comprehensive toolkit of modern technologies and frameworks that
             power my development journey. From frontend to backend, I leverage
             these tools to build scalable, efficient, and user-friendly
-            applications
+            applications.
           </p>
         </div>
 
-        {/* Category tabs */}
+        {/* Category Tabs */}
         <div
           className="flex flex-wrap justify-center gap-4 mb-12"
-          data-aos="fade-right"
+          data-aos="fade-up"
+          data-aos-delay="200"
         >
           {(
             Object.keys(techCategories) as Array<keyof typeof techCategories>
-          ).map((category, index) => {
+          ).map((category) => {
             const Icon = categoryIcons[category];
+            const isActive = activeCategory === category;
             return (
               <button
-                key={index}
+                key={category}
                 onClick={() => setActiveCategory(category)}
-                className={`px-6 py-3 rounded-lg border transition-all duration-300 flex items-center gap-2 ${
-                  activeCategory === category
-                    ? "bg-primary text-background border-primary"
-                    : "border-border text-muted-foreground hover:border-primary hover:text-primary"
+                className={`px-6 py-3 rounded-xl border transition-all duration-300 flex items-center gap-2 font-medium ${
+                  isActive
+                    ? "bg-primary text-primary-foreground border-primary shadow-lg shadow-primary/25"
+                    : "bg-card border-border text-muted-foreground hover:border-primary hover:text-primary hover:bg-primary/5"
                 }`}
               >
                 <Icon className="h-4 w-4" />
-                <span className="font-medium">{category}</span>
+                <span>{category}</span>
               </button>
             );
           })}
         </div>
 
-        {/* Tech items grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {techCategories[activeCategory].map((tech, index) => (
-            <div
-              key={tech.name}
-              className="p-8 bg-transparent group cursor-pointer overflow-hidden"
-              style={{ animationDelay: `${index * 0.1}s` }}
-              data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
-              data-aos-delay={index * 100}
-              data-aos-mirror="true"
-            >
-              <div className="hover:scale-110 transition-all duration-300 flex items-center justify-center flex-col text-center h-full">
-                {<tech.icon size={50} className="mb-4 text-primary" />}
+        {/* Tech Items Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          {techCategories[activeCategory].map((tech, index) => {
+            const IconComponent = tech.icon;
+            return (
+              <div
+                key={tech.name}
+                className="group relative bg-card rounded-xl p-6 border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/5 hover:-translate-y-1"
+                data-aos="fade-up"
+                data-aos-delay={index * 50}
+              >
+                <div className="flex flex-col items-center text-center">
+                  {/* Icon */}
+                  <div className="mb-4 p-3 rounded-full bg-primary/10 group-hover:bg-primary/20 transition-colors duration-300">
+                    <IconComponent size={48} className="text-primary" />
+                  </div>
 
-                <h3 className="text-xl font-semibold mb-3 text-primary transition-colors">
-                  {tech.name}
-                </h3>
-                <p className="text-muted-foreground text-sm">
-                  {tech.description}
-                </p>
+                  {/* Title */}
+                  <h3 className="text-lg font-semibold mb-2 text-foreground group-hover:text-primary transition-colors">
+                    {tech.name}
+                  </h3>
+
+                  {/* Description */}
+                  <p className="text-sm text-muted-foreground">
+                    {tech.description}
+                  </p>
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
   );
 };
+
+export default TechStack;

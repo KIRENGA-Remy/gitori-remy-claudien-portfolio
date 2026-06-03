@@ -14,14 +14,7 @@ const educationItems = [
         institution: "Ecole Secondaire Mubuga",
         description:
             "Completed lower secondary education with a strong foundation in core subjects including mathematics, sciences, languages, and introductory computer studies. Built essential academic skills and discipline while exploring early interests in technology and problem-solving during this transitional phase of secondary schooling.",
-    },
-    {
-        year: "2013 - 2019",
-        degree: "Nursery & Primary Basic Education (P1–P6)",
-        institution: "Nyamirama Adventiste Elayo School (N.A.E.S)",
-        description:
-            "Received foundational education in a faith-based Adventist school environment, covering literacy, numeracy, basic sciences, social studies, and moral/religious instruction. Developed early curiosity in mathematics and logical thinking, laying the groundwork for future self-taught coding and technical exploration.",
-    },
+    }
 ];
 export const Education = () => {
     return (

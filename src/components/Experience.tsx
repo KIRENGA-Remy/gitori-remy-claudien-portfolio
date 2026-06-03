@@ -38,7 +38,7 @@ export const Experience = () => {
                 <div className="text-center mb-16" data-aos="fade-up">
                     <h2 className="text-4xl md:text-5xl font-bold mb-8">Professional Experience</h2>
                     <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-                        Over 4+ years of hands-on experience in software development, from internships to full-time roles, focusing on innovative solutions and collaborative projects.
+                        Over 5+ years of hands-on experience in software development, from internships to full-time roles, focusing on innovative solutions and collaborative projects.
                     </p>
                 </div>
 
