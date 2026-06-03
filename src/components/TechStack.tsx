@@ -110,6 +110,18 @@ const techCategories = {
       description: "Robust framework for building dynamic web applications",
       icon: SiAngular,
     },
+    {
+      name: "PUG Template Engine",
+      description: "Template engine for server-side rendering",
+      icon: () => ( 
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pug/pug-original.svg"
+          width={48}
+          height={48}
+          alt="PUG"
+        />
+      ),
+    }
   ],
   Backend: [
     {

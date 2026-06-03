@@ -60,6 +60,14 @@ const ConvexIcon = ({ size = 20, className = "" }) => (
 
 const techIcons = {
   React: SiReact,
+  PUG: () => ( 
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pug/pug-original.svg"
+      width={48}
+      height={48}
+      alt="PUG"
+    />
+  ),
   Next: SiReact,
   "Next.js": SiReact,
   Vue: SiVuedotjs,
@@ -94,34 +102,44 @@ const techIcons = {
 const projects = [
 
   {
-    title: "Blog & NewsLetter",
-    techStack: ["Frontend", "Backend"],
+    title: "AfriQollect",
+    techStack: ["Backend"],
     description:
-      "This is a personal blog website created to share insights, tutorials, and experiences related to software development, technology, and personal growth. Built with a clean, responsive design, the blog features categorized posts, a searchable archive, and a user-friendly interface. Whether you're a developer or a tech enthusiast, you'll find valuable and engaging content regularly updated by GITORI Remy Claudien.",
-    tags: ["React", "Node.js", "Tailwind CSS", "MongoDB"],
+      "This is Africa Quantitative Sciences (AQS) platform that i contributed to as a backend developer.  personal blog website created to share insights, tutorials, and experiences related to software development, technology, and personal growth. Built with a clean, responsive design, the blog features categorized posts, a searchable archive, and a user-friendly interface. Whether you're a developer or a tech enthusiast, you'll find valuable and engaging content regularly updated by GITORI Remy Claudien.",
+    tags: ["PUG", "Node.js", "Tailwind CSS", "MongoDB"],
     images: [
-      "https://res.cloudinary.com/dv610czy9/image/upload/v1760717628/Screenshot_From_2025-10-17_18-10-34_nyzwqa.png",
-      "https://res.cloudinary.com/dv610czy9/image/upload/v1760717756/Screenshot_From_2025-10-17_18-15-39_ra02se.png",
-      "https://res.cloudinary.com/dv610czy9/image/upload/v1760717954/Screenshot_From_2025-10-17_18-18-57_wjaprf.png",
+      "https://res.cloudinary.com/dfcjbxjcu/image/upload/v1780483726/AfriQollect_Sign_In_jrorbc.png"
     ],
-    demoLink: "https://gitori-remy-claudien-blog.vercel.app/",
-    githubLink:
-      "https://github.com/KIRENGA-Remy/gitori-remy-claudien-blog",
+    demoLink: "https://afriqollect.com/"
   },
+  // {
+  //   title: "Blog & NewsLetter",
+  //   techStack: ["Frontend", "Backend"],
+  //   description:
+  //     "This is a personal blog website created to share insights, tutorials, and experiences related to software development, technology, and personal growth. Built with a clean, responsive design, the blog features categorized posts, a searchable archive, and a user-friendly interface. Whether you're a developer or a tech enthusiast, you'll find valuable and engaging content regularly updated by GITORI Remy Claudien.",
+  //   tags: ["React", "Node.js", "Tailwind CSS", "MongoDB"],
+  //   images: [
+  //     "https://res.cloudinary.com/dv610czy9/image/upload/v1760717628/Screenshot_From_2025-10-17_18-10-34_nyzwqa.png",
+  //     "https://res.cloudinary.com/dv610czy9/image/upload/v1760717756/Screenshot_From_2025-10-17_18-15-39_ra02se.png",
+  //     "https://res.cloudinary.com/dv610czy9/image/upload/v1760717954/Screenshot_From_2025-10-17_18-18-57_wjaprf.png",
+  //   ],
+  //   demoLink: "https://gitori-remy-claudien-blog.vercel.app/",
+  //   githubLink:
+  //     "https://github.com/KIRENGA-Remy/gitori-remy-claudien-blog",
+  // },
   {
-    title: "Note Taking Platform",
-    techStack: ["Frontend", "Convex"],
+    title: "Electronic Commerce Platform",
+    techStack: ["Frontend"],
     description:
-      "A modern note-taking application built with Next.js and Convex, featuring real-time collaboration, markdown support, and seamless GitHub authentication.",
-    tags: ["Next", "Tailwind CSS", "Convex DB"],
+      " A modern e-commerce platform built with React.js and Tailwind CSS, offering a seamless shopping experience. Features include product browsing, secure checkout, and responsive design for all devices. Powered by Convex DB for real-time inventory management and user interactions.",
+    tags: ["React", "Tailwind CSS", "Convex DB"],
     images: [
-      "https://res.cloudinary.com/dv610czy9/image/upload/v1760718095/Screenshot_From_2025-10-17_18-21-14_twt219.png",
-      "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?w=1200&h=800&fit=crop",
-      "https://res.cloudinary.com/dv610czy9/image/upload/v1760718214/Screenshot_From_2025-10-17_18-23-12_xtwbvr.png",
-      "https://res.cloudinary.com/dv610czy9/image/upload/v1760718249/Screenshot_From_2025-10-17_18-23-51_qfii4d.png",
+      "https://res.cloudinary.com/dfcjbxjcu/image/upload/v1780485659/shopping_website_sqf862.png",
+      "https://res.cloudinary.com/dfcjbxjcu/image/upload/v1780485718/e_commerce_cosmetics_ea0nw7.png",
+      "https://res.cloudinary.com/dfcjbxjcu/image/upload/v1780485757/products_in_cart_k3ix54.png"
     ],
-    demoLink: "https://noteit-rose.vercel.app",
-    githubLink: "https://www.github.com/KIRENGA-Remy/noteit-rose",
+    demoLink: "https://e-commerce-reactjs-six.vercel.app/",
+    githubLink: "https://github.com/KIRENGA-Remy/eCommerceReactjs",
   },
   {
     title: "Portfolio Website",
@@ -130,58 +148,58 @@ const projects = [
       "Step into the digital world of Remy Claudien, the beloved software developer, with this responsive portfolio website. 🌐✨ Explore his inspiring journey, milestones, and life-changing services blending tech and spirituality. Built with modern tools like React and TypeScript, it's a heartfelt tribute to a mentor who transforms lives. 💻🕊️ Crafted by GITORI Remy Claudien! 🚀",
     tags: ["Next", "Tailwind CSS", "TypeScript", "shadcn/ui", "Three.js"],
     images: [
-      "https://res.cloudinary.com/dv610czy9/image/upload/v1760718486/landing_jupo1w.png",
-      "https://res.cloudinary.com/dv610czy9/image/upload/v1760718634/navbar_n8w2py.png",
-      "https://res.cloudinary.com/dv610czy9/image/upload/v1760718683/project_ccizag.png",
+      "https://res.cloudinary.com/dfcjbxjcu/image/upload/v1780486204/portfolio_gvmqgu.png",
+      "https://res.cloudinary.com/dfcjbxjcu/image/upload/v1780486240/portfolio_image_ods8yv.png",
+      "https://res.cloudinary.com/dfcjbxjcu/image/upload/v1780486271/portfolio_contact_us_d6l8sb.png",
     ],
-    demoLink: "https://gitori-remy-claudien.vercel.app",
-    githubLink: "https://www.github.com/KIRENGA-Remy/gitori-remy-claudien-portfolio",
+    demoLink: "https://github.com/KIRENGA-Remy/gitori-remy-claudien-portfolio",
+    githubLink: "https://github.com/KIRENGA-Remy/gitori-remy-claudien-portfolio",
   },
-  {
-    title: "Automated Parking Management System",
-    techStack: ["Python,", "IoT"],
-    description:
-      "A smart parking management system integrating license plate recognition, RFID-based payment, and real-time dashboard monitoring. Designed for automated vehicle entry/exit, payment processing, and security alerts.",
-    tags: ["Python", "HTML", "Arduino"],
-    images: [
-      "https://res.cloudinary.com/dv610czy9/image/upload/v1760718854/01_pacivi.jpg",
-      "https://res.cloudinary.com/dv610czy9/image/upload/v1759565471/iwympzuqomft7cpqds4w.jpg",
-      "https://res.cloudinary.com/dv610czy9/image/upload/v1760718921/03_d65r2j.png",
-    ],
-    demoLink:
-      "https://www.github.com/KIRENGA-Remy/parking-management-system",
-    githubLink:
-      "https://www.github.com/KIRENGA-Remy/parking-management-system",
-  },
-  {
-    title: "HooBank - The Next Generation Payment Method",
-    techStack: ["Frontend,", "Web Development"],
-    description:
-      "Everything you need to accept card payments and grow your business anywhere on the planet.",
-    tags: ["Vite", "Tailwind CSS", "JavaScript"],
-    images: [
-      "https://res.cloudinary.com/dv610czy9/image/upload/v1760719020/Screenshot_From_2025-10-17_18-36-33_cmoabo.png",
-      "https://res.cloudinary.com/dv610czy9/image/upload/v1760719075/Screenshot_From_2025-10-17_18-37-33_otpgni.png",
-      "https://res.cloudinary.com/dv610czy9/image/upload/v1760719118/Screenshot_From_2025-10-17_18-38-19_qlq3eu.png",
-    ],
-    demoLink: "https://hoo-bank-vert.vercel.app/",
-    githubLink: "https://www.github.com/KIRENGA-Remy/hoo-bank",
-  },
-  {
-    title: "Portfolio",
-    techStack: ["Frontend,", "Portfolio"],
-    description:
-      "3D Inspired portfolio, crafted with gentleness. Step into an immersive digital experience where creativity meets purpose. This portfolio reflects Remy's unique harmony between technology and soul — a space where every interaction feels alive, intentional, and deeply human. Built with modern craftsmanship and a vision for meaningful design, it embodies elegance, innovation, and serenity. Each element flows seamlessly, inviting you to explore the story of a developer who transforms code into connection. 💻🕊️",
-    tags: ["Next", "Tailwind CSS", "TypeScript", "shadcn/ui", "Three.js"],
-    images: [
-      "https://res.cloudinary.com/dv610czy9/image/upload/v1760719421/Screenshot_From_2025-10-17_18-42-54_fu4bnc.png",
-      "https://res.cloudinary.com/dv610czy9/image/upload/v1760719514/Screenshot_From_2025-10-17_18-44-52_fy0rac.png",
-      "https://res.cloudinary.com/dv610czy9/image/upload/v1760719638/Screenshot_From_2025-10-17_18-46-13_ze3jhu.png",
-    ],
-    demoLink: "https://gitori-remy-claudien-portfolio.vercel.app",
-    githubLink:
-      "https://www.github.com/KIRENGA-Remy/gitori-remy-claudien-portfolio",
-  },
+  // {
+  //   title: "Automated Parking Management System",
+  //   techStack: ["Python,", "IoT"],
+  //   description:
+  //     "A smart parking management system integrating license plate recognition, RFID-based payment, and real-time dashboard monitoring. Designed for automated vehicle entry/exit, payment processing, and security alerts.",
+  //   tags: ["Python", "HTML", "Arduino"],
+  //   images: [
+  //     "https://res.cloudinary.com/dv610czy9/image/upload/v1760718854/01_pacivi.jpg",
+  //     "https://res.cloudinary.com/dv610czy9/image/upload/v1759565471/iwympzuqomft7cpqds4w.jpg",
+  //     "https://res.cloudinary.com/dv610czy9/image/upload/v1760718921/03_d65r2j.png",
+  //   ],
+  //   demoLink:
+  //     "https://www.github.com/KIRENGA-Remy/parking-management-system",
+  //   githubLink:
+  //     "https://www.github.com/KIRENGA-Remy/parking-management-system",
+  // },
+  // {
+  //   title: "HooBank - The Next Generation Payment Method",
+  //   techStack: ["Frontend,", "Web Development"],
+  //   description:
+  //     "Everything you need to accept card payments and grow your business anywhere on the planet.",
+  //   tags: ["Vite", "Tailwind CSS", "JavaScript"],
+  //   images: [
+  //     "https://res.cloudinary.com/dv610czy9/image/upload/v1760719020/Screenshot_From_2025-10-17_18-36-33_cmoabo.png",
+  //     "https://res.cloudinary.com/dv610czy9/image/upload/v1760719075/Screenshot_From_2025-10-17_18-37-33_otpgni.png",
+  //     "https://res.cloudinary.com/dv610czy9/image/upload/v1760719118/Screenshot_From_2025-10-17_18-38-19_qlq3eu.png",
+  //   ],
+  //   demoLink: "https://hoo-bank-vert.vercel.app/",
+  //   githubLink: "https://www.github.com/KIRENGA-Remy/hoo-bank",
+  // },
+  // {
+  //   title: "Portfolio",
+  //   techStack: ["Frontend,", "Portfolio"],
+  //   description:
+  //     "3D Inspired portfolio, crafted with gentleness. Step into an immersive digital experience where creativity meets purpose. This portfolio reflects Remy's unique harmony between technology and soul — a space where every interaction feels alive, intentional, and deeply human. Built with modern craftsmanship and a vision for meaningful design, it embodies elegance, innovation, and serenity. Each element flows seamlessly, inviting you to explore the story of a developer who transforms code into connection. 💻🕊️",
+  //   tags: ["Next", "Tailwind CSS", "TypeScript", "shadcn/ui", "Three.js"],
+  //   images: [
+  //     "https://res.cloudinary.com/dv610czy9/image/upload/v1760719421/Screenshot_From_2025-10-17_18-42-54_fu4bnc.png",
+  //     "https://res.cloudinary.com/dv610czy9/image/upload/v1760719514/Screenshot_From_2025-10-17_18-44-52_fy0rac.png",
+  //     "https://res.cloudinary.com/dv610czy9/image/upload/v1760719638/Screenshot_From_2025-10-17_18-46-13_ze3jhu.png",
+  //   ],
+  //   demoLink: "https://gitori-remy-claudien-portfolio.vercel.app",
+  //   githubLink:
+  //     "https://www.github.com/KIRENGA-Remy/gitori-remy-claudien-portfolio",
+  // },
 ];
 
 
