@@ -233,7 +233,7 @@ export const Hero = () => {
                     : ""
                 }
               >
-                Innovative Software Developer with 4+ years of experience. A
+                Innovative Software Developer with 5+ years of experience. A
                 tenacious problem-solver with a knack for dissecting complex
                 challenges and crafting elegant solutions.
               </span>
@@ -272,7 +272,7 @@ export const Hero = () => {
                 className="cursor-can-hover border-primary text-primary hover:bg-primary hover:text-background transition-all duration-300"
                 onClick={() => {
                   window.open(
-                    "https://drive.google.com/file/d/1Gqm--sKnGwytdE6X-RxluXN-40YueQ3I/view?usp=sharing",
+                    "https://drive.google.com/file/d/1EqkxlQgYCKYR4I9q_clxozcaVcljUvh5/view?usp=sharing",
                     "_blank"
                   );
                 }}

@@ -211,7 +211,7 @@ export const Contact = () => {
                     Phone
                   </h3>
                   <p className="text-muted-foreground text-sm sm:text-base">
-                    +250-796-086-040
+                    +250-792-441-050
                   </p>
                 </div>
               </div>
