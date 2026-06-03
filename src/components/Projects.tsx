@@ -86,8 +86,8 @@ const projects = [
       "https://res.cloudinary.com/dv610czy9/image/upload/v1760718634/navbar_n8w2py.png",
       "https://res.cloudinary.com/dv610czy9/image/upload/v1760718683/project_ccizag.png",
     ],
-    demoLink: "https://itsdieudonne.vercel.app",
-    githubLink: "https://www.github.com/KIRENGA-Remy/itsdieudonne",
+    demoLink: "https://gitori-remy-claudien.vercel.app",
+    githubLink: "https://www.github.com/KIRENGA-Remy/gitori-remy-claudien-portfolio",
   },
   {
     title: "Automated Parking Management System",
@@ -123,7 +123,7 @@ const projects = [
     title: "Portfolio",
     techStack: ["Frontend,", "Portfolio"],
     description:
-      "3D Inspired portfolio, crafted with gentleness. Step into an immersive digital experience where creativity meets purpose. This portfolio reflects Dieudonne's unique harmony between technology and soul — a space where every interaction feels alive, intentional, and deeply human. Built with modern craftsmanship and a vision for meaningful design, it embodies elegance, innovation, and serenity. Each element flows seamlessly, inviting you to explore the story of a developer who transforms code into connection. 💻🕊️",
+      "3D Inspired portfolio, crafted with gentleness. Step into an immersive digital experience where creativity meets purpose. This portfolio reflects Remy's unique harmony between technology and soul — a space where every interaction feels alive, intentional, and deeply human. Built with modern craftsmanship and a vision for meaningful design, it embodies elegance, innovation, and serenity. Each element flows seamlessly, inviting you to explore the story of a developer who transforms code into connection. 💻🕊️",
     tags: ["Next", "Tailwind CSS", "TypeScript", "shadcn/ui", "Three.js"],
     images: [
       "https://res.cloudinary.com/dv610czy9/image/upload/v1760719421/Screenshot_From_2025-10-17_18-42-54_fu4bnc.png",
