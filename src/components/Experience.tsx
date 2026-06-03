@@ -6,7 +6,7 @@ const experienceItems = [
         title: "Software Developer Intern",
         company: "Africa Quantitative Sciences (AQS), Kigali, Rwanda",
         description:
-            "Contributing to full-stack web and mobile applications using PUG templates, Node.js, React Native, and mongodb databases. Focused on responsive UI development, API integration, and performance optimization while supporting Docker-based workflows and CI/CD practices.",
+            "Contributing to full-stack web and mobile applications using PUG template Engine, Node.js, React Native, and mongodb databases. Focused on responsive UI development, API integration, and performance optimization while supporting Docker-based workflows and CI/CD practices.",
     },
     {
         period: "Jan 2026 – Mar 2026",

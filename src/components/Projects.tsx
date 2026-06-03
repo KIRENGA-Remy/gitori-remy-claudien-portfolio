@@ -112,6 +112,22 @@ const projects = [
     ],
     demoLink: "https://afriqollect.com/"
   },
+    {
+    title: "Delight Music and Studio Center Website",
+    techStack: ["Frontend, ", "Backend"],
+    description:
+      "This is a website for Delight Music and Studio Center, a music production and recording studio. The website was built using React for the frontend, Node.js for the backend and MySQL deployed on TiDB for database management. It features a modern design with responsive layouts, showcasing the studio's services, portfolio, and contact information. The backend handles form submissions and integrates with third-party APIs for enhanced functionality.",
+    tags: ["React", "Node.js", "Tailwind CSS", "MySQL"],
+    images: [
+      "https://res.cloudinary.com/dfcjbxjcu/image/upload/v1780493852/delight_messages_wmwitk.png",
+      "https://res.cloudinary.com/dfcjbxjcu/image/upload/v1780493634/del_tmbfog.png",
+      "https://res.cloudinary.com/dfcjbxjcu/image/upload/v1780494142/delight_producer_page_t6ryrq.png",
+      "https://res.cloudinary.com/dfcjbxjcu/image/upload/v1780494327/delight_artist_page_ynhyyy.png"
+    ],
+    demoLink: "https://delightmusicstudio.vercel.app/",
+    githubLink:
+      "https://github.com/KIRENGA-Remy/delight-music-studio-updated-web",
+  },
   // {
   //   title: "Blog & NewsLetter",
   //   techStack: ["Frontend", "Backend"],
