@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Code2, Database, Server, Cloud, Palette, Cpu } from "lucide-react";
+import { Code2, Database, Server, Cloud, Palette, Cpu, Brain } from "lucide-react";
 import {
   SiJavascript,
   SiReact,
@@ -10,7 +10,6 @@ import {
   SiPython,
   SiPostgresql,
   SiMongodb,
-  SiPrisma,
   SiDocker,
   SiGit,
   SiGithub,
@@ -24,6 +23,7 @@ import {
   SiDjango,
   SiAngular,
   SiLaravel,
+  SiSupabase,
 } from "@icons-pack/react-simple-icons";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -172,6 +172,11 @@ const techCategories = {
       icon: SiPostgresql,
     },
     {
+      name: "Supabase",
+      description: "Open-source Firebase alternative",
+      icon: SiSupabase,
+    },
+    {
       name: "MySQL",
       description: "Popular open-source relational database",
       icon: SiMysql,
@@ -187,10 +192,59 @@ const techCategories = {
       icon: ConvexIcon,
     },
     {
-      name: "Prisma",
-      description: "Next-generation ORM for Node.js and TypeScript",
-      icon: SiPrisma,
+      name: "Redis",
+      description: "In-memory data structure store",
+      icon: () => (
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg"
+          width={48}
+          height={48}
+          alt="Redis"
+        />
+      ),
     },
+  ],
+  AI_LLM: [
+    {
+      name: "LLM API integration",
+      description: "Integration of Large Language Models for advanced AI capabilities",
+      icon: () => (
+        <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg flex items-center justify-center text-white font-bold text-xl">
+          AI
+        </div>
+      ),
+    },
+    {
+      name: "RAG pipeline design",
+      description: "Designing Retrieval-Augmented Generation pipelines for enhanced AI performance",
+      icon: () => (
+        <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center text-white font-bold text-xl">
+          RAG
+        </div>
+      ),
+    },
+    {
+      name: "Hugging Face",
+      description: "Utilizing Hugging Face models and tools for NLP tasks",
+      icon: () => (
+        <div className="w-12 h-12 bg-gradient-to-br from-yellow-500 to-orange-500 rounded-lg flex items-center justify-center text-white font-bold text-xl">
+          🤗
+        </div>
+      ),
+    },
+    {
+      name: "Ollama",
+      description: "Leveraging Ollama for efficient LLM deployment and management",
+      icon: () => (
+        <img
+          src="https://avatars.githubusercontent.com/u/123551651?s=200&v=4"
+          width={48}
+          height={48}
+          className="rounded-lg"
+          alt="Ollama"
+        />
+      ),
+    }
   ],
   DevOps: [
     {
@@ -247,11 +301,6 @@ const techCategories = {
       description: "Robot design, construction, and programming",
       icon: RoboticsIcon,
     },
-    {
-      name: "AI/ML",
-      description: "Artificial Intelligence and Machine Learning",
-      icon: Cpu,
-    },
   ],
 };
 
@@ -259,6 +308,7 @@ const categoryIcons = {
   Frontend: Code2,
   Backend: Server,
   Database: Database,
+  AI_LLM: Brain,
   DevOps: Cloud,
   Design: Palette,
   Others: Cpu,
