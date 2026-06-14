@@ -105,7 +105,7 @@ const techIcons = {
 const projects = [
   {
     title: "TriageDesk",
-    techStack: ["Frontend", "Backend", "AI/LLM"],
+    techStack: ["Frontend,", "Backend,", "AI/LLM"],
     description:
       "TriageDesk is an AI-powered ticket triage and knowledge assistant system that I designed and built on a self-hosted open-source LLM without relying on commercial APIs. The system efficiently processes unstructured messages, converting them into validated, structured JSON data. It features a filterable dashboard for easy ticket management and a Retrieval-Augmented Generation (RAG) assistant that provides accurate answers to user queries, grounded in a comprehensive knowledge base with proper citations.",
     tags: ["React", "Node.js", "PostgreSQL", "Ollama LLM"],
