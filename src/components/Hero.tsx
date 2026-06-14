@@ -271,8 +271,8 @@ export const Hero = () => {
                 size="lg"
                 className="cursor-can-hover border-primary text-primary hover:bg-primary hover:text-background transition-all duration-300"
                 onClick={() => {
-                  window.open(
-                    "https://drive.google.com/file/d/1EqkxlQgYCKYR4I9q_clxozcaVcljUvh5/view?usp=sharing",
+                  window.open( 
+                    "https://drive.google.com/file/d/1p-vg8C1Gp-MWI2Vfx9qSTyqgBW8XzlBs/view?usp=sharing",
                     "_blank"
                   );
                 }}
