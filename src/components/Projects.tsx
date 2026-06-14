@@ -1,4 +1,4 @@
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink, Github, Brain } from "lucide-react";
 import { Card } from "./ui/card";
 import { Button } from "./ui/button";
 import { FloatingDock } from "@/components/ui/floating-dock";
@@ -93,6 +93,7 @@ const techIcons = {
   Supabase: SiSupabase,
   Firebase: SiFirebase,
   Sanity: SiSanity,
+  "Ollama LLM": Brain,
   "Convex DB": ConvexIcon,
   "React Query": SiReactquery,
   "Socket.io": SiSocketdotio,
@@ -102,7 +103,21 @@ const techIcons = {
   Arduino: SiArduino,
 };
 const projects = [
-
+  {
+    title: "TriageDesk",
+    techStack: ["Frontend", "Backend", "AI/LLM"],
+    description:
+      "TriageDesk is an AI-powered ticket triage and knowledge assistant system that I designed and built on a self-hosted open-source LLM without relying on commercial APIs. The system efficiently processes unstructured messages, converting them into validated, structured JSON data. It features a filterable dashboard for easy ticket management and a Retrieval-Augmented Generation (RAG) assistant that provides accurate answers to user queries, grounded in a comprehensive knowledge base with proper citations.",
+    tags: ["React", "Node.js", "PostgreSQL", "Ollama LLM"],
+    images: [
+      "https://res.cloudinary.com/dfcjbxjcu/image/upload/v1781425895/triagedesk_sfcoav.png",
+      "https://res.cloudinary.com/dfcjbxjcu/image/upload/v1781426006/triagedesk_generating_d17pva.png",
+      "https://res.cloudinary.com/dfcjbxjcu/image/upload/v1781426099/triagedesk_knowledge_assistant_ngvome.png",
+      "https://res.cloudinary.com/dfcjbxjcu/image/upload/v1781426150/triagedesk_triage_queue_vumpnv.png"
+    ],
+    demoLink: "https://smart-intake-triage.vercel.app/",
+    githubLink: "https://github.com/KIRENGA-Remy/smart_intake_triage"
+  },
   {
     title: "AfriQollect",
     techStack: ["Backend"],

@@ -2,6 +2,20 @@ import { Briefcase } from "lucide-react";
 
 const experienceItems = [
     {
+        period: "May 2026 – Jun 2026",
+        title: "Smart Intake Triage & Knowledge Assistant (TriageDesk)",
+        company: "Self-Employed, Kigali, Rwanda",
+        description:
+            "Designed and built an AI system on a self-hosted open-source LLM with no commercial APIs. Built ticket triage that turns unstructured messages into validated, structured JSON with a filterable dashboard, plus a Retrieval-Augmented Generation (RAG) assistant that answers questions grounded in a knowledge base with citations."
+    },
+    {
+        period: "Sep 2025 – Dec 2025",
+        title: "Software Developer Intern",
+        company: "Africa Quantitative Sciences (AQS), Kigali, Rwanda",
+        description:
+            "Contributing to full-stack web and mobile applications using PUG template Engine, Node.js, React Native, and mongodb databases. Focused on responsive UI development, API integration, and performance optimization while supporting Docker-based workflows and CI/CD practices.",
+    },
+    {
         period: "Sep 2025 – Dec 2025",
         title: "Software Developer Intern",
         company: "Africa Quantitative Sciences (AQS), Kigali, Rwanda",
